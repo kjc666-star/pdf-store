@@ -45,23 +45,25 @@ MinEnclosure\_Inside————————————————————
 
 MinEnclosure\_Except——————————————————————————ENC {layer1} {layer2} < {value} ABUT < 90 SINGULAR EXCEPT {layer3} REGION
 
-L1InsideL2——————————————————————————————INside {layer1} {layer2}
+L1InsideL2——————————————————————————————  INside {layer1} {layer2}
 
-L1InsideL2\_Except———————————————————————————INside {layer1} {layer2} EXCEPT {layer3}  
+L1InsideL2\_Except———————————————————————————  INside {layer1} {layer2} EXCEPT {layer3}  
 
 L1InsideL2\_Inside——————————————————————————— INside {layer1} {layer2} INSIDE {layer3}
 
-L1InteractL2—————————————————————————————INTERACT {layer1} {layer2}
+L1InteractL2————————————————————————————— INTERACT {layer1} {layer2}
 
-L1InteractL2\_Except——————————————————————————INTERACT {layer1} {layer2} EXCEPT {layer3}
+L1InteractL2\_Except——————————————————————————  INTERACT {layer1} {layer2} EXCEPT {layer3}
 
-L1InteractL2\_Inside——————————————————————————INTERACT {layer1} {layer2} INSIDE {layer3}
+L1InteractL2\_Inside—————————————————————————— INTERACT {layer1} {layer2} INSIDE {layer3}
 
-FixedLengthByOrthogonal————————————————————————LENGTH {layer1} = {value} 
+FixedLengthByOrthogonal———————————————————————— LENGTH {layer1} = {value} 
 
-FixedLengthByOrthogonal\_Except—————————————————————LENGTH {layer1} = {value} EXCEPT {layer3} 
+FixedLengthByOrthogonal\_Except————————————————————— LENGTH {layer1} = {value} EXCEPT {layer3} 
 
-FixedLengthByOrthogonal\_Inside—————————————————————LENGTH {layer1} = {value} INSIDE {layer3}MinDiameter—————————————————————————————DIAMETER {layer1} < {value} TOLERANCE {num1}
+FixedLengthByOrthogonal\_Inside—————————————————————LENGTH {layer1} = {value} INSIDE {layer3}
+
+MinDiameter—————————————————————————————DIAMETER {layer1} < {value} TOLERANCE {num1}
 
 MinDiameter\_Except——————————————————————————DIAMETER {layer1} < {value} TOLERANCE {num1}EXCEPT {layer3}
 
