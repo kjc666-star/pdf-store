@@ -79,5 +79,5 @@ Density\_Region\_Max————————————————————
 
 Density\_Region\_Min——————————————————————————DENSITY {layer1} EXCEPT {layer2} < {value}
 
-FixedOffset\_XY————————————————————————————OFFSET {layer} {num1} = {value}
+FixedOffset\_XY————————————————————————————OFFSET {layer1} {num1} = {value}
 
