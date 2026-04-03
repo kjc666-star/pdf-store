@@ -1,0 +1,83 @@
+# DRC模板-第二行语法结构RAG知识库
+
+## 
+
+* 本知识库为DRC代码生成专用，每个模板名对应唯一的第二行SVRF指令语法结构，结构为：模板名————语法结构（一一对应）
+* 使用规则：依次根据模板名，匹配对应语法结构，生成对应结构函数
+
+
+
+
+
+
+
+模板名                                                                                                                              语法结构
+
+MinWidth  ———————————————————————————    INT {layer1} < {value} ABUT < 90 SINGULAR REGION
+
+MinWidth\_Inside—————————————————————————  INT {layer1} < {value} ABUT < 90 SINGULAR INSIDE {layer2} REGION
+
+FixedWidth———————————————————————————   INT {layer1} = {value} ABUT < 90 SINGULAR REGION
+
+FixedWidth\_Inside————————————————————————    INT {layer1} = {value} ABUT < 90 SINGULAR INSIDE {layer2} REGION
+
+FixedWidth\_Except————————————————————————   INT {layer1} < {value} ABUT < 90 SINGULAR EXCEPT {layer2} REGION
+
+MinSpacing———————————————————————————     EXT {layer1} < {value} ABUT < 90 SINGULAR REGION
+
+MinSpacing\_Inside————————————————————————      EXT {layer1} < {value} ABUT < 90 SINGULAR INSIDE {layer2} REGION
+
+MinSpacing\_Except————————————————————————    EXT {layer1} < {value} ABUT < 90 SINGULAR EXCEPT {layer2} REGION
+
+MinSpacing\_InterLayer———————————————————————   EXT {layer1} {layer2} < {value} ABUT < 90 SINGULAR REGION
+
+MinSpacing\_InterLayer\_Inside————————————————————   EXT {layer1} {layer2} < {value} ABUT < 90 SINGULAR INSIDE {layer3} REGION
+
+MinSpacing\_InterLayer\_Except———————————————————— EXT {layer1} {layer2} < {value} ABUT < 90 SINGULAR INSIDE {layer3} REGION
+
+MinSpacing\_Conditional—————————————————————EXT {layer1} < {value} IF DIAMETER {layer1} = {num1} ABUT < 90 SINGULAR REGION
+
+MinEnclosure——————————————————————————ENC {layer1} {layer2} < {value} ABUT < 90 SINGULAR REGION
+
+MinEnclosure\_With\_Tol——————————————————————ENC {layer1} {layer2} < {value} TOLERANCE {num1} ABUT < 90 SINGULAR REGION
+
+MinEnclosure\_Inside——————————————————————————ENC {layer1} {layer2} < {value} ABUT < 90 SINGULAR INSIDE {layer3} REGION
+
+MinEnclosure\_Except——————————————————————————ENC {layer1} {layer2} < {value} ABUT < 90 SINGULAR EXCEPT {layer3} REGION
+
+L1InsideL2——————————————————————————————INside {layer1} {layer2}
+
+L1InsideL2\_Except———————————————————————————INside {layer1} {layer2} EXCEPT {layer3}  
+
+L1InsideL2\_Inside——————————————————————————— INside {layer1} {layer2} INSIDE {layer3}
+
+L1InteractL2—————————————————————————————INTERACT {layer1} {layer2}
+
+L1InteractL2\_Except——————————————————————————INTERACT {layer1} {layer2} EXCEPT {layer3}
+
+L1InteractL2\_Inside——————————————————————————INTERACT {layer1} {layer2} INSIDE {layer3}
+
+FixedLengthByOrthogonal————————————————————————LENGTH {layer1} = {value} 
+
+FixedLengthByOrthogonal\_Except—————————————————————LENGTH {layer1} = {value} EXCEPT {layer3} 
+
+FixedLengthByOrthogonal\_Inside—————————————————————LENGTH {layer1} = {value} INSIDE {layer3}MinDiameter—————————————————————————————DIAMETER {layer1} < {value} TOLERANCE {num1}
+
+MinDiameter\_Except——————————————————————————DIAMETER {layer1} < {value} TOLERANCE {num1}EXCEPT {layer3}
+
+MinDiameter\_Inside——————————————————————————DIAMETER {layer1} < {value} TOLERANCE {num1}INSIDE {layer3}
+
+Density\_Global\_Max——————————————————————————DENSITY {layer1} > {value}
+
+Density\_Global\_Min——————————————————————————DENSITY {layer1} < {value}
+
+Density\_Window\_Max—————————————————————————DENSITY {layer1} WINDOW {num1} {num2} STEP {num3} > {value}
+
+Density\_Window\_Min—————————————————————————DENSITY {layer1} WINDOW {num1} {num2} STEP {num3} < {value}
+
+Density\_Region\_Max——————————————————————————DENSITY {layer1} EXCEPT {layer2} > {value}
+
+Density\_Region\_Min——————————————————————————DENSITY {layer1} EXCEPT {layer2} < {value}
+
+FixedOffset\_XY————————————————————————————OFFSET {layer} {num1} = {value}
+
