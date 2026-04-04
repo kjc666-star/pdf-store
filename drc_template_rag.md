@@ -22,8 +22,8 @@ MinEnclosure——————————————————————�
 MinEnclosure_With_Tol——————————————————————ENC {layer1} {layer2} < {value} TOLERANCE {num1} ABUT < 90 SINGULAR REGION
 MinEnclosure_Inside——————————————————————————ENC {layer1} {layer2} < {value} ABUT < 90 SINGULAR INSIDE {layer3} REGION
 MinEnclosure_Except——————————————————————————ENC {layer1} {layer2} < {value} ABUT < 90 SINGULAR EXCEPT {layer3} REGION
-L1InsideL2——————————————————————————————INside {layer1} {layer2}
-L1InsideL2_Except———————————————————————————INside {layer1} {layer2} EXCEPT {layer3}  
+L1InsideL2——————————————————————————————     INside {layer1} {layer2}
+L1InsideL2_Except——————————————————————————— INside {layer1} {layer2} EXCEPT {layer3}  
 L1InsideL2_Inside——————————————————————————— INside {layer1} {layer2} INSIDE {layer3}
 L1InteractL2—————————————————————————————INTERACT {layer1} {layer2}
 L1InteractL2_Except——————————————————————————INTERACT {layer1} {layer2} EXCEPT {layer3}
@@ -40,4 +40,4 @@ Density_Window_Max————————————————————�
 Density_Window_Min—————————————————————————DENSITY {layer1} WINDOW {num1} {num2} STEP {num3} < {value}
 Density_Region_Max——————————————————————————DENSITY {layer1} EXCEPT {layer2} > {value}
 Density_Region_Min——————————————————————————DENSITY {layer1} EXCEPT {layer2} < {value}
-FixedOffset_XY————————————————————————————OFFSET {layer} {num1} = {value}
+FixedOffset_XY————————————————————————————OFFSET {layer1} {num1} = {value}
