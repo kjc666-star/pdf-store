@@ -1,0 +1,37 @@
+	子类别/模板名字			                                   Description匹配参考	                                                 Op.	
+	MinWidth		                                                   Width of layer	                                                         >=	
+	MinWidth_Inside			                                   Width of layer (inside layer2)	                                         >=	
+	FixedWidth		         	                                   Width of layer 	                                                          =	
+	FixedWidth_Inside	         	                                   Width of layer (inside layer2)	                                          =	
+	FixedWidth_Except		                                           Width of layer (except layer2)	                                  =	
+	MinSpacing		         	                                   Space of layer	                                                         >=	
+	MinSpacing_Inside		                                           Space of layer (inside layer2)	                                         >=	
+	MinSpacing_Except		                                           Space of layer (except layer2)	                                 >=	
+	MinSpacing_InterLayer		                                   Space of layer1 to layer2	                                         >=	
+	MinSpacing_InterLayer_Inside                                  Space of L1 to L2 (inside L3)	                                 <=	
+	MinSpacing_InterLayer_Except	                           Space of L1 to L2 (except L3)	                                 <=	
+	MinSpacing_Conditional		                                   Space of L1 if diameter of L1 is Size	                         >=	
+	MinEnclosure		                                                   L1 enclosure of L2	                                                 >=	
+	MinEnclosure_With_Tol		                                   L1 enclosure of L2, tolerance is TOL	                         >=	
+	MinEnclosure_Inside		                                   L1 enclosure of L2 (inside L3)	                                 >=	
+	MinEnclosure_Except		                                   L1 enclosure of L2 (except layer3)	                         >=	
+       L1InsideL2		                                                   Layer must inside layer2		
+	L1InsideL2_Except		                                           Layer must inside layer2 (except layer3)		
+	L1InsideL2_Inside		                                           Layer must inside layer2 (inside layer3)		
+	L1InteractL2	          	                                           Layer must interact layer2		
+	L1InteractL2_Except	                                           Layer must interact layer2 (except layer3)		
+	L1InteractL2_Inside	                                           Layer must interact layer2 (inside layer3)		
+	FixedLengthByOrthogonal		                           Length of layer                          	                                   =	
+	FixedLengthByOrthogonal_Except		                   Length of layer (except layer2)	                                   =	
+	FixedLengthByOrthogonal_Inside		                   Length of layer (inside layer2)	                                   =	
+	MinDiameter		                                                   Diameter of layer, tolerance is TOL	                          >=	
+	MinDiameter_Except		                                   Diameter of layer, tolerance is TOL (except layer2)	  >=	
+	MinDiameter_Inside		                                   Diameter of layer, tolerance is TOL (inside layer2)	  >=	
+        Density_Global_Max		                                   Maximum L1 density across full chip	                          <=	
+	Density_Global_Min	                                           Minimum L1 density across full chip	                          >=	
+        Density_Window_Max		                                   Max L1 density in window W x H, stepping S	          <=	
+	Density_Window_Min		                                   Min L1 density in window W x H, stepping S	          >=	
+        Density_Region_Max		                                   Max L1 density across L2 / (except L2)	                  <=	
+	Density_Region_Min		                                   Min L1 density across L2 / (except L2)	                  >=	
+	FixedOffset_X	                      	                                   OFFSET of L1 in X direction	                                   =	
+	FixedOffset_Y	                                                           OFFSET of L1 in Y direction	                                   =	
